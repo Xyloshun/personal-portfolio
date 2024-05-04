@@ -10,12 +10,19 @@ const HeroSection = () => {
             Hello, I'm Leonard
           </h1>
           <p className="text-[#ADB7BE] text-lg mb-6 lg:text-xl">
-            If I applied to a job and this is the site that appears, please click the download button for my updated CV for more accurate links to my projects. This is a very early release of my portfolio to accomodate any older versions of my CV I've sent. Thank you!
+            If I applied to a job and this is the site that appears, please click the download button for my updated CV for more accurate links. My C++ project portfolio PDF can be downloaded with the second button as well. This is a very early release of my portfolio to accomodate any older versions of my CV I've sent. Thank you!
           </p>
         </div>
         <div>
           <a href="/downloads/main.pdf" download="nguyenleonard-CV">
-            <button className="px-6 py-3 rounded-full mr-4 bg-white hover:bg-slate-200 text-black">Download CV</button>
+            <button className="px-6 py-3 rounded-full m-4 bg-white hover:bg-slate-200 text-black">Download CV</button>
+          </a>
+          <a href="/downloads/main.pdf">
+            <button className="m-4 bg-gradient-to-br from-blue-500 via-purple-500 to-yellow-500 px-1 py-1  text-white rounded-full">
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                Projects PDF
+              </span>
+            </button>
           </a>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
