@@ -10,7 +10,7 @@ const HeroSection = () => {
             Hello, I'm Leonard
           </h1>
           <p className="text-[#ADB7BE] text-lg mb-6 lg:text-xl">
-            If I applied to a job and this is the site that appears, please click the download button for my updated CV for more accurate links to my projects. Thank you!
+            If I applied to a job and this is the site that appears, please click the download button for my updated CV for more accurate links to my projects. This is a very early release of my portfolio to accomodate any older versions of my CV I've sent. Thank you!
           </p>
         </div>
         <div>
