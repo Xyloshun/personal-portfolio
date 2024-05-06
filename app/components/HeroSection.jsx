@@ -14,11 +14,11 @@ const HeroSection = () => {
           </p>
         </div>
         <div>
-          <a href="/downloads/main.pdf" download="nguyenleonard-CV">
+          <a href="/downloads/nguyenleonard-CV.pdf" download="nguyenleonard-CV">
             <button className="px-6 py-3 rounded-full m-4 bg-white hover:bg-slate-200 text-black">Download CV</button>
           </a>
-          <a href="/downloads/main.pdf">
-            <button className="m-4 bg-gradient-to-br from-blue-500 via-purple-500 to-yellow-500 px-1 py-1  text-white rounded-full">
+          <a href="/downloads/nguyenleonard-comp4.pdf">
+            <button className="m-4 bg-gradient-to-br from-blue-500 via-purple-500 to-black-500 px-1 py-1  text-white rounded-full">
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Projects PDF
               </span>
