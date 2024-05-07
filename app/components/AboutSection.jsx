@@ -64,7 +64,7 @@ const AboutSection = () => {
             Coupled with my passion for cybersecurity, I also use some of my technical skills as part of
             my learning on Vulnerability Research, Application Security, and Red/Blue teaming activities.
             Many of my projects so far are written in C, C++, Javascript, and Python. At the time of writing
-            this, the "Projects PDF" button will be where all my documentation for my C++ projects will be held.
+            this, the "Projects PDF" button will be where all my documentation for my C++ projects are held.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
