@@ -18,6 +18,10 @@ const navLinks = [
   {
     title: "Projects (Under Development)",
     path: "#projects",
+  },
+  {
+    title: "HomeLab",
+    path: "https://xyloshun-homelab.vercel.app/"
   }
 ]
 
