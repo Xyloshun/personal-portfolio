@@ -31,7 +31,8 @@ const HeroSection = () => {
           />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            If I applied to a job and this is the site that appears, please click the download button for my updated CV for more accurate links. My C++ project portfolio PDF can be downloaded with the second button as well. This is a very early release of my portfolio to accomodate any older versions of my CV I've sent. Thank you!
+            "Your path is illuminated by the light, Yet darkness lets the stars shine bright."
+            ~ J.L.W Brooks
           </p>
         <div>
           <a href="/downloads/nguyenleonard-comp4.pdf">

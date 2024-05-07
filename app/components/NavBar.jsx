@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Link from 'next/link'
 import React, { useState } from 'react'
 import NavLink from './NavLink'
@@ -12,7 +12,7 @@ import localFont from 'next/font/local'
 // array of pages
 const navLinks = [
   {
-    title: "About (Under Development)",
+    title: "About",
     path: "#about",
   },
   {
