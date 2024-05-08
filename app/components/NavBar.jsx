@@ -21,8 +21,8 @@ const navLinks = [
   },
   {
     title: "HomeLab",
-    path: "https://xyloshun-homelab.vercel.app/"
-  }
+    path: "https://xyloshun-homelab.vercel.app/",
+  },
 ]
 
 const NavBar = () => {
