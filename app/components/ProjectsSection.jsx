@@ -24,7 +24,7 @@ const projectsData = [
   {
     id: 3,
     title: "SecureDrop",
-    description: "Secure filesharing app for linux",
+    description: "Secure filesharing app for any Linux Distro",
     image: "/images/securedrop-image.png",
     tag: ["All", "Python"],
     gitURL: "https://github.com/Xyloshun/SecureDrop-Rework",
