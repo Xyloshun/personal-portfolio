@@ -14,6 +14,15 @@ const projectsData = [
   },
   {
     id: 2,
+    title: "Pythagoras Tree",
+    description: "Tree drawn with a common Pythagoras theorem",
+    image: "/images/pythagorastree-image.png",
+    tag: ["All", "C++"],
+    gitURL: "/downloads/comp4-archives/pythagoras-tree.tar.gz",
+    preview: "/"
+  },
+  {
+    id: 3,
     title: "Sokoban",
     description: "Classic Japanese box game",
     image: "/images/sokoban-image.png",
@@ -22,11 +31,38 @@ const projectsData = [
     preview: "/",
   },
   {
-    id: 3,
+    id: 4,
+    title: "NBody Simulation",
+    description: "Simulation of Newton's Gravitational Laws",
+    image: "/images/nbody-image.png",
+    tag: ["All", "C++"],
+    gitURL: "/downloads/comp4-archives/nbody-simulation.tar.gz",
+    preview: "/",
+  },
+  {
+    id: 5,
+    title: "DNA Sequence Aligner",
+    description: "Optimizes string alignments, commonly seen for DNA",
+    image: "/images/dna-image.png",
+    tag: ["All", "C++"],
+    gitURL: "/downloads/comp4-archives/dna-alignment.tar.gz",
+    preview: "/"
+  },
+  {
+    id: 6,
+    title: "Kronos Regex Searcher",
+    description: "Searches through a Linux Kronos device's logs using regex",
+    image: "/images/kronos-image.png",
+    tag: ["All", "C++"],
+    gitURL: "/downloads/comp4-archives/kronos-regex.tar.gz",
+    preview: "/"
+  },
+  {
+    id: 7,
     title: "SecureDrop",
     description: "Secure filesharing app for any Linux distro",
     image: "/images/securedrop-image.png",
-    tag: ["All", "Python"],
+    tag: ["All", "Python", "Cybersecurity"],
     gitURL: "https://github.com/Xyloshun/SecureDrop-Rework",
     preview: "/",
   },
