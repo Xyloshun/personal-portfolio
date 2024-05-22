@@ -89,7 +89,7 @@ const ProjectsSection = () => {
   }
 
   return (
-    <section ref={ref}>
+    <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mb-4">My Projects</h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
@@ -108,7 +108,7 @@ const ProjectsSection = () => {
           isSelected = {tag === "C++"}
         />
       </div>
-      <ul id="projects" className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
             variants = {cardVariants}
