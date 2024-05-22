@@ -8,7 +8,7 @@ const Footer = () => {
         <p className="text-slate-700">All right reserved.</p>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
