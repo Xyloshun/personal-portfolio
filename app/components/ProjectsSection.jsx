@@ -1,7 +1,8 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import ProjectCard from './ProjectCard'
 import ProjectTag from './ProjectTag'
+import { motion, useInView } from "framer-motion"
 
 const projectsData = [
   {
@@ -70,18 +71,25 @@ const projectsData = [
 ]
 
 const ProjectsSection = () => {
-  const [tag, setTag] = useState("All");
-
-  const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
-  )
+  const [tag, setTag] = useState("All")
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
 
   const handleTagChange = (newTag) => {
     setTag(newTag)
   }
 
+  const filteredProjects = projectsData.filter((project) =>
+    project.tag.includes(tag)
+  )
+
+  const cardVariants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 }
+  }
+
   return (
-    <>
+    <section ref={ref}>
       <h2 className="text-center text-4xl font-bold text-white mb-4">My Projects</h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
@@ -100,19 +108,26 @@ const ProjectsSection = () => {
           isSelected = {tag === "C++"}
         />
       </div>
-      <div id="projects" className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul id="projects" className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
-          <ProjectCard
-            key={project.id}
-            title={project.title}
-            description={project.description}
-            imgURL={project.image}
-            gitURL={project.gitURL}
-            previewURL={project.preview}
-          />
+          <motion.li
+            variants = {cardVariants}
+            initial = "initial"
+            animate = {isInView ? "animate" : "initial"}
+            transition = {{ duration: 0.3, delay: index * 0.4 }}
+          >
+            <ProjectCard
+              key={project.id}
+              title={project.title}
+              description={project.description}
+              imgURL={project.image}
+              gitURL={project.gitURL}
+              previewURL={project.preview}
+            />
+          </motion.li>
         ))}
-      </div>
-    </>
+      </ul>
+    </section>
   )
 }
 
