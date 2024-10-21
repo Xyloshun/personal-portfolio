@@ -38,7 +38,7 @@ const projectsData = [
     description: "Simulation of Newton's Gravitational Laws",
     image: "/images/nbody-image.png",
     tag: ["All", "C++"],
-    gitURL: "/downloads/comp4-archives/nbody-simulation.tar.gz",
+    gitURL: "/ownloads/comp4-archives/nbody-simulation.tar.gz",
     preview: "/",
   },
   {
