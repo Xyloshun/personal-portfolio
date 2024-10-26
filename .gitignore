@@ -19,6 +19,7 @@
 # misc
 .DS_Store
 *.pem
+/.well-known/
 
 # debug
 npm-debug.log*
